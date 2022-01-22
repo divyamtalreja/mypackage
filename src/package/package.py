@@ -4,7 +4,7 @@ from matplotlib.colors import ListedColormap
 import os
 import joblib
 import logging
-from tqdm import tqdm
+
 
 class Perceptron:
   def __init__(self, eta, epochs):
@@ -25,7 +25,7 @@ class Perceptron:
     X_with_bias = np.c_[self.X, -np.ones((len(self.X), 1))] # CONCATINATION
     logging.info(f"X with bias: \n{X_with_bias}")
 
-    for epoch in tqdm(range(self.epochs),total=self.epochs,desc="training the model"):
+    for epoch in (self.epochs):
       logging.info("--"*10)
       logging.info(f"for epoch: {epoch}")
       logging.info("--"*10)

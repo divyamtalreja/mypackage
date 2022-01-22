@@ -2,18 +2,20 @@ import setuptools
 
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
+Project_NAME="package"
+USER_NAME="divyamtalreja"
 
 setuptools.setup(
-    name="example-package-YOUR-USERNAME-HERE",
+    name=f"{Project_NAME}-{USER_NAME}",
     version="0.0.1",
-    author="Example Author",
-    author_email="author@example.com",
-    description="A small example package",
+    author=USER_NAME,
+    author_email="divyamtalreja16@gmail.com",
+    description="implementation of  perceptron",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/pypa/sampleproject",
+    url=f"https://github.com/{USER_NAME}/{Project_NAME}",
     project_urls={
-        "Bug Tracker": "https://github.com/pypa/sampleproject/issues",
+        "Bug Tracker": f"https://github.com/{USER_NAME}/{Project_NAME}/issues",
     },
     classifiers=[
         "Programming Language :: Python :: 3",
@@ -22,5 +24,9 @@ setuptools.setup(
     ],
     package_dir={"": "src"},
     packages=setuptools.find_packages(where="src"),
-    python_requires=">=3.6",
+    python_requires=">=3.7",
+    install_requires=[
+        "numpy",
+        "pandas"
+    ]
 )
