@@ -2,7 +2,7 @@ import setuptools
 
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
-Project_NAME="package"
+Project_NAME="mypackage"
 USER_NAME="divyamtalreja"
 
 setuptools.setup(

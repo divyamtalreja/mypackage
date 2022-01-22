@@ -4,7 +4,7 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Upload Python package
+name: Upload Python packag
 
 on:
   push:
